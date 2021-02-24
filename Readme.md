@@ -9,5 +9,5 @@
 - To make the os, run the command: `make build-x86_64`
 - Exit the image with: `exit`
 - You can then use the os with qemu with the command: `qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso`
-- 
+
 <img align="center" src="./assets/building.png">
