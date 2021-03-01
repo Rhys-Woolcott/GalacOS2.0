@@ -1,7 +1,8 @@
-#include <print.h>
+#include <manio.h>
+#include <display.h>
 
-void kernel_main() {
-    print_clear();
-    print_set_color(PRINT_COLOR_GREEN, PRINT_COLOR_BLACK);
-    print_str("Hello World!");
+void _main() {
+    cls();
+    spc(VGA_COLOR_WHITE, VGA_COLOR_BLACK);
+    strp("Welcome To GalacOS\nCopyright Rhys Woolcott 2021\n\nroot:/ $ _");
 }

@@ -1,5 +1,5 @@
 global long_mode_start
-extern kernel_main
+extern _main
 
 section .text
 bits 64
@@ -11,6 +11,5 @@ long_mode_start:
     mov fs, ax
     mov gs, ax
 
-    ; print `OK`
-	call kernel_main
+	call _main
 	hlt
