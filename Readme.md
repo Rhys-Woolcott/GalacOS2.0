@@ -11,3 +11,17 @@
 - You can then use the os with qemu with the command: `qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso`
 
 <img align="center" src="./assets/building.png">
+
+---
+# TODO
+- [X] Create bootloader and basic kernel;
+- [X] Create basic C output library;
+- - [ ] Create Function to convert to string. (text2hex too)
+- - [ ] Add basic input to the library
+- [ ] Create basic gui.
+
+---
+# Credits
+- [Rhys Woolcott](https://github.com/Rhys-Woolcott) [ Author ]
+- [Alx](#) [ Helping with C programming ]
+- [Jud](https://github.com/musteat64) [ Emotional support and breaker of things that are unbreakable by literally everone else on earth ] 
