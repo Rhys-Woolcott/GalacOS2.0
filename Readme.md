@@ -23,5 +23,4 @@
 ---
 # Credits
 - [Rhys Woolcott](https://github.com/Rhys-Woolcott) [ Author ]
-- [Alx](#) [ Helping with C programming ]
 - [Jud](https://github.com/musteat64) [ Emotional support and breaker of things that are unbreakable by literally everone else on earth ] 
