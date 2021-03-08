@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "manio.h": "c"
+        "manio.h": "c",
+        "display.h": "c"
     }
 }

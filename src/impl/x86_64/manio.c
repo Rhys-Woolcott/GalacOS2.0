@@ -11,7 +11,7 @@ struct Char {
 struct Char* buffer = (struct Char*) 0xb8000;
 size_t col = 0;
 size_t row = 0;
-uint8_t color = VGA_COLOR_WHITE | VGA_COLOR_BLACK << 4;
+uint8_t color = VGA_COLOR_WHITE | VGA_COLOR_BLUE << 4;
 
 void clear_row(size_t row) {
     struct Char empty = (struct Char) {
@@ -82,6 +82,13 @@ void spc(uint8_t foreground, uint8_t background) {
     color = foreground + (background << 4);
 }
 
-char* int_tostring(int num) {
-    return "Hello World";
+char* itoa(int val, int base) {
+    static char buf[32] = {0};
+
+    int i = 30;
+
+    for(; val && i ; --i, val /= base)
+        buf[i] = "0123456789abcdef"[val % base];
+
+    return &buf[i+1];
 }
