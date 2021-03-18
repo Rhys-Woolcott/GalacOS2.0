@@ -15,7 +15,7 @@
 ---
 # TODO
 - [X] Create bootloader and basic kernel;
-- [] Create basic C output library;
+- [ ] Create basic C output library;
 - - [X] Create int to string function `ITOA(int, base)`;
 - - [X] Create Basic Output To Terminal `STRP(string)`
 - - [ ] Create Basic input system;
