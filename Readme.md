@@ -15,9 +15,12 @@
 ---
 # TODO
 - [X] Create bootloader and basic kernel;
-- [X] Create basic C output library;
-- - [ ] Create Function to convert to string. (text2hex too)
-- - [ ] Add basic input to the library
+- [] Create basic C output library;
+- - [X] Create int to string function `ITOA(int, base)`;
+- - [X] Create Basic Output To Terminal `STRP(string)`
+- - [ ] Create Basic input system;
+- - - [X] Note all keycodes in input header file.
+- - - [ ] Get input from `0x60`
 - [ ] Create basic gui.
 
 ---
