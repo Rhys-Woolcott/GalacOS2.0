@@ -48,7 +48,7 @@ void newln() {
     clear_row(VGA_COLS - 1);
 }
 
-void charp(char character) {
+void chap(char character) {
     if (character == '\n') {
         newln();
         return;
@@ -74,7 +74,7 @@ void strp(char* str) {
             return;
         }
 
-        charp(character);
+        chap(character);
     }
 }
 
@@ -88,7 +88,7 @@ char* itoa(int val, int base) {
     int i = 30;
 
     for(; val && i ; --i, val /= base)
-        buf[i] = "0123456789abcdef"[val % base];
+        buf[i] = "-0123456789abcdef"[val+1 % base];
 
     return &buf[i+1];
 }

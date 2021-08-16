@@ -1,0 +1,22 @@
+"filename", "language", "Docker", "Makefile", "Markdown", "LinkerScript", "C++", "C", "x86 and x86_64 Assembly", "Properties", "comment", "blank", "total"
+"c:\xampp\htdocs\Projects\still trying to make an os\Makefile", "Makefile", 0, 22, 0, 0, 0, 0, 0, 0, 0, 7, 29
+"c:\xampp\htdocs\Projects\still trying to make an os\Readme.md", "Markdown", 0, 0, 25, 0, 0, 0, 0, 0, 0, 5, 30
+"c:\xampp\htdocs\Projects\still trying to make an os\buildenv\Dockerfile", "Docker", 9, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\kernel\main.c", "C", 0, 0, 0, 0, 0, 60, 0, 0, 0, 8, 68
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\boot\header.asm", "x86 and x86_64 Assembly", 0, 0, 0, 0, 0, 0, 10, 0, 5, 1, 16
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\boot\main.asm", "x86 and x86_64 Assembly", 0, 0, 0, 0, 0, 0, 106, 0, 6, 23, 135
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\boot\main64.asm", "x86 and x86_64 Assembly", 0, 0, 0, 0, 0, 0, 13, 0, 0, 2, 15
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\display.c", "C", 0, 0, 0, 0, 0, 6, 0, 0, 1, 1, 8
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\interrupts.c", "C", 0, 0, 0, 0, 0, 0, 0, 0, 6, 2, 8
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\manio.c", "C", 0, 0, 0, 0, 0, 72, 0, 0, 0, 22, 94
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\math.c", "C", 0, 0, 0, 0, 0, 11, 0, 0, 18, 7, 36
+"c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\rand.c", "C", 0, 0, 0, 0, 0, 9, 0, 0, 1, 3, 13
+"c:\xampp\htdocs\Projects\still trying to make an os\src\intf\display.h", "C++", 0, 0, 0, 0, 5, 0, 0, 0, 1, 3, 9
+"c:\xampp\htdocs\Projects\still trying to make an os\src\intf\interrupts.h", "C++", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1
+"c:\xampp\htdocs\Projects\still trying to make an os\src\intf\keyboard.h", "C++", 0, 0, 0, 0, 82, 0, 0, 0, 0, 5, 87
+"c:\xampp\htdocs\Projects\still trying to make an os\src\intf\manio.h", "C++", 0, 0, 0, 0, 26, 0, 0, 0, 0, 3, 29
+"c:\xampp\htdocs\Projects\still trying to make an os\src\intf\math.h", "C++", 0, 0, 0, 0, 4, 0, 0, 0, 0, 1, 5
+"c:\xampp\htdocs\Projects\still trying to make an os\src\intf\rand.h", "C++", 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\xampp\htdocs\Projects\still trying to make an os\targets\x86_64\iso\boot\grub\grub.cfg", "Properties", 0, 0, 0, 0, 0, 0, 0, 6, 0, 1, 7
+"c:\xampp\htdocs\Projects\still trying to make an os\targets\x86_64\linker.ld", "LinkerScript", 0, 0, 0, 13, 0, 0, 0, 0, 0, 3, 16
+"Total", "-", 9, 22, 25, 13, 120, 158, 129, 6, 39, 100, 621

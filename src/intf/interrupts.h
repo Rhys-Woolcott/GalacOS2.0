@@ -1,0 +1,1 @@
+// static __inline unsigned char inb(unsigned short int port);

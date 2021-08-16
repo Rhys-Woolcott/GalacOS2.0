@@ -1,0 +1,63 @@
+Date : 2021-08-16 15:24:55
+Directory : c:\xampp\htdocs\Projects\still trying to make an os
+Total : 20 files,  482 codes, 39 comments, 100 blanks, all 621 lines
+
+Languages
++-------------------------+------------+------------+------------+------------+------------+
+| language                | files      | code       | comment    | blank      | total      |
++-------------------------+------------+------------+------------+------------+------------+
+| C                       |          6 |        158 |         26 |         43 |        227 |
+| x86 and x86_64 Assembly |          3 |        129 |         11 |         26 |        166 |
+| C++                     |          6 |        120 |          2 |         13 |        135 |
+| Markdown                |          1 |         25 |          0 |          5 |         30 |
+| Makefile                |          1 |         22 |          0 |          7 |         29 |
+| LinkerScript            |          1 |         13 |          0 |          3 |         16 |
+| Docker                  |          1 |          9 |          0 |          2 |         11 |
+| Properties              |          1 |          6 |          0 |          1 |          7 |
++-------------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                      | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                         |         20 |        482 |         39 |        100 |        621 |
+| buildenv                                                                                  |          1 |          9 |          0 |          2 |         11 |
+| src                                                                                       |         15 |        407 |         39 |         82 |        528 |
+| src\impl                                                                                  |          9 |        287 |         37 |         69 |        393 |
+| src\impl\kernel                                                                           |          1 |         60 |          0 |          8 |         68 |
+| src\impl\x86_64                                                                           |          8 |        227 |         37 |         61 |        325 |
+| src\impl\x86_64\boot                                                                      |          3 |        129 |         11 |         26 |        166 |
+| src\intf                                                                                  |          6 |        120 |          2 |         13 |        135 |
+| targets                                                                                   |          2 |         19 |          0 |          4 |         23 |
+| targets\x86_64                                                                            |          2 |         19 |          0 |          4 |         23 |
+| targets\x86_64\iso                                                                        |          1 |          6 |          0 |          1 |          7 |
+| targets\x86_64\iso\boot                                                                   |          1 |          6 |          0 |          1 |          7 |
+| targets\x86_64\iso\boot\grub                                                              |          1 |          6 |          0 |          1 |          7 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------+-------------------------+------------+------------+------------+------------+
+| filename                                                                                  | language                | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+-------------------------+------------+------------+------------+------------+
+| c:\xampp\htdocs\Projects\still trying to make an os\Makefile                              | Makefile                |         22 |          0 |          7 |         29 |
+| c:\xampp\htdocs\Projects\still trying to make an os\Readme.md                             | Markdown                |         25 |          0 |          5 |         30 |
+| c:\xampp\htdocs\Projects\still trying to make an os\buildenv\Dockerfile                   | Docker                  |          9 |          0 |          2 |         11 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\kernel\main.c                | C                       |         60 |          0 |          8 |         68 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\boot\header.asm       | x86 and x86_64 Assembly |         10 |          5 |          1 |         16 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\boot\main.asm         | x86 and x86_64 Assembly |        106 |          6 |         23 |        135 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\boot\main64.asm       | x86 and x86_64 Assembly |         13 |          0 |          2 |         15 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\display.c             | C                       |          6 |          1 |          1 |          8 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\interrupts.c          | C                       |          0 |          6 |          2 |          8 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\manio.c               | C                       |         72 |          0 |         22 |         94 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\math.c                | C                       |         11 |         18 |          7 |         36 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\impl\x86_64\rand.c                | C                       |          9 |          1 |          3 |         13 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\intf\display.h                    | C++                     |          5 |          1 |          3 |          9 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\intf\interrupts.h                 | C++                     |          0 |          1 |          0 |          1 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\intf\keyboard.h                   | C++                     |         82 |          0 |          5 |         87 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\intf\manio.h                      | C++                     |         26 |          0 |          3 |         29 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\intf\math.h                       | C++                     |          4 |          0 |          1 |          5 |
+| c:\xampp\htdocs\Projects\still trying to make an os\src\intf\rand.h                       | C++                     |          3 |          0 |          1 |          4 |
+| c:\xampp\htdocs\Projects\still trying to make an os\targets\x86_64\iso\boot\grub\grub.cfg | Properties              |          6 |          0 |          1 |          7 |
+| c:\xampp\htdocs\Projects\still trying to make an os\targets\x86_64\linker.ld              | LinkerScript            |         13 |          0 |          3 |         16 |
+| Total                                                                                     |                         |        482 |         39 |        100 |        621 |
++-------------------------------------------------------------------------------------------+-------------------------+------------+------------+------------+------------+
