@@ -30,7 +30,7 @@ void clear_row(size_t row)
 void clear_col(size_t col)
 {
     struct Char empty = (struct Char){
-        character : " ",
+        character : ' ',
         color : color,
     };
 
@@ -45,6 +45,8 @@ void cls()
     for (size_t i = 0; i < VGA_ROWS; i++)
     {
         clear_row(i);
+        col = 0;
+        row = 0;
     }
 }
 
@@ -76,11 +78,11 @@ void handleError(char* err) {
     return strp(err);
 }
 
-void backspace(int currentRow) {
-    row = currentRow;
-    if (!row < 0) {
-        return handleError("OH FUCK!");
-    }
+char* backspace() {
+    col--;
+    strp(" ");
+    col--;
+    return "";
 }
 
 void chap(char character)

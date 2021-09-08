@@ -31,3 +31,4 @@ int *separateDigits(int n);
 static __inline unsigned char inb(unsigned short int port);
 void printf(const char* fmt, ...);
 void handleError(char* err);
+char* backspace();

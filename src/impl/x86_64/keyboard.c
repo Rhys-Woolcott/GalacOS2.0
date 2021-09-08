@@ -66,12 +66,12 @@ char* ASCIITableUppercase[58] = {
 char* translate(uint8_t scancode, bool uppercase) {
 	if (scancode > 58) return 0;
 	switch (scancode) {
-		case 0x0000000e: return "Backspace";
+		case 0x0000000e: return backspace();
 		case 0x0000003a: return "Caps lock";
 		case 0x0000001d: return "Control";
 		case 0x00000038: return "Alt";
-		default: 
-			printf("%x", scancode);
+		case 0x0000000f: return "    ";
+		default:
 			// if (uppercase) return ASCIITableUppercase[scancode];
 			return ASCIITable[scancode];
 	}
