@@ -1,4 +1,5 @@
 #include "keyboard.h"
+#include "manio.h"
 
 /*
  * Scan code   Key                         Scan code   Key                     Scan code   Key                     Scan code   Key
@@ -30,7 +31,7 @@ char* ASCIITable[58] = {
 	0 ,   0 , "1", "2", // 0x00, ESC,
 	"3", "4", "5", "6",
 	"7", "8", "9", "0",
-	"-", "=",  0 ,  0,  // backspace, tab
+	"-", "=",  "\r" ,  0,  // backspace, tab
 	"q", "w", "e", "r",
 	"t", "y", "u", "i",
 	"o", "p", "[", "]",
@@ -48,7 +49,7 @@ char* ASCIITableUppercase[58] = {
 	0 ,   0 , "!", "\"", // 0x00, ESC,
 	"£", "$", "%", "^",
 	"&", "*", "(", ")",
-	"_", "+",  0 ,  0,  // backspace, tab
+	"_", "+", "bs" , 0,  // backspace, tab
 	"Q", "W", "E", "R",
 	"T", "Y", "U", "I",
 	"O", "P", "{", "}",
@@ -64,8 +65,14 @@ char* ASCIITableUppercase[58] = {
 
 char* translate(uint8_t scancode, bool uppercase) {
 	if (scancode > 58) return 0;
-
-	// if (uppercase) return ASCIITableUppercase[scancode];
-	return ASCIITable[scancode];
+	switch (scancode) {
+		case 0x0000000e: return "Backspace";
+		case 0x0000003a: return "Caps lock";
+		case 0x0000001d: return "Control";
+		case 0x00000038: return "Alt";
+		default: 
+			printf("%x", scancode);
+			// if (uppercase) return ASCIITableUppercase[scancode];
+			return ASCIITable[scancode];
+	}
 }
-

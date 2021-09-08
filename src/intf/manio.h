@@ -27,3 +27,7 @@ void chap(char character);                        // print_char
 void strp(char* string);                           // print_str
 void spc(uint8_t foreground, uint8_t background);  // print_set_color
 char* itoa(int val, int base);                     // convert int to string
+int *separateDigits(int n);
+static __inline unsigned char inb(unsigned short int port);
+void printf(const char* fmt, ...);
+void handleError(char* err);

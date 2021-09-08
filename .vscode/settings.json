@@ -4,5 +4,5 @@
 		"display.h": "c",
 		"keyboard.h": "c"
 	},
-	"C_Cpp.errorSquiggles": "Disabled"
+	"C_Cpp.errorSquiggles": "Disabled",
 }
