@@ -94,6 +94,10 @@ void chap(char character)
         newln();
         return;
     }
+    if (character == "\r") {
+        backspace();
+        return;
+    }
 
     if (col >= VGA_COLS)
     {
@@ -141,12 +145,6 @@ char *itoa(int val, int base)
 }
 
 int *separateDigits(int n);
-static __inline unsigned char inb(unsigned short int port) {
-    unsigned char _v;
-
-    __asm__ __volatile__ ("inb %w1,%0":"=a" (_v): "Nd" (port));
-    return _v;
-}
 
 typedef __builtin_va_list va_list;
 #define va_start(ap, X) __builtin_va_start(ap, X)
@@ -215,4 +213,16 @@ void printf(const char* fmt, ...) {
         _putc((int)c);
     }
     va_end(ap);
+}
+
+static __inline unsigned char inb(unsigned short int port) {
+	unsigned char _v;
+    
+    // What the fuck, How does this work?
+	__asm__ __volatile__ ("inb %w1,%0":"=a" (_v):"Nd" (port));
+	return _v;
+}
+
+void outb(unsigned short port, unsigned char val) {
+    asm volatile("outb %0, %1" : : "a"(val), "Nd"(port) );
 }
