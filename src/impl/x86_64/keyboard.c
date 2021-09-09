@@ -63,16 +63,18 @@ char* ASCIITableUppercase[58] = {
 	0, " " // Left Alt
 };
 
-char* translate(uint8_t scancode, bool uppercase) {
+char* translate(uint8_t scancode) {
 	if (scancode > 58) return 0;
 	switch (scancode) {
 		case 0x0000000e: return backspace();
 		case 0x0000003a: return "Caps lock";
 		case 0x0000001d: return "Control";
 		case 0x00000038: return "Alt";
+		case 0x0000002a: return "Left Shift";
+		case 0x00000036: return "Right Shift";
 		case 0x0000000f: return "    ";
+		case 0x00000050: return "for ate";
 		default:
-			// if (uppercase) return ASCIITableUppercase[scancode];
 			return ASCIITable[scancode];
 	}
 }

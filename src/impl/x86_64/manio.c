@@ -79,10 +79,12 @@ void handleError(char* err) {
 }
 
 char* backspace() {
-    col--;
-    strp(" ");
-    col--;
-    return "";
+    if (col > 0) {
+        col--;
+        strp(" ");
+        col--;
+        return "";
+    }
 }
 
 void chap(char character)

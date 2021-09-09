@@ -59,13 +59,16 @@ void _main() {
 
     spc(VGA_COLOR_BLACK, VGA_COLOR_WHITE);
     cls();
-    strp("Welcome To Floofy OS!");
+    strp("Welcome To Floofy OS!\n");
     
     do {
+        outb(0x20, 0x20);
         if (inb(0x60) != c) {
             c = inb(0x60);
             if (c > 0) {
-                strp(translate(c, false));
+                strp(translate(c));
+                // printf("%x", c);
+                continue;
             }
         }
     } while (c != 1);
