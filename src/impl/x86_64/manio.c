@@ -215,12 +215,16 @@ void printf(const char* fmt, ...) {
     va_end(ap);
 }
 
-static __inline unsigned char inb(unsigned short int port) {
+static __inline unsigned char inbp(unsigned short int port) {
 	unsigned char _v;
     
     // What the fuck, How does this work?
 	__asm__ __volatile__ ("inb %w1,%0":"=a" (_v):"Nd" (port));
 	return _v;
+}
+
+unsigned char inb(unsigned short int port) {
+    return inb(port);
 }
 
 void outb(unsigned short port, unsigned char val) {

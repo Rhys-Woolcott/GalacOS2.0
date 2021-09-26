@@ -32,4 +32,4 @@ void printf(const char* fmt, ...);
 void handleError(char* err);
 char* backspace();
 void outb(unsigned short port, unsigned char val);
-static __inline unsigned char inb(unsigned short int port);
+unsigned char inb(unsigned short int port);
