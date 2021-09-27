@@ -2,7 +2,8 @@
 	"files.associations": {
 		"manio.h": "c",
 		"display.h": "c",
-		"keyboard.h": "c"
+		"keyboard.h": "c",
+		"stdbool.h": "c"
 	},
-	"C_Cpp.errorSquiggles": "Disabled",
+	"C_Cpp.errorSquiggles": "Disabled"
 }

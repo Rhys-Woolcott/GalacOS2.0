@@ -230,3 +230,16 @@ unsigned char inb(unsigned short int port) {
 void outb(unsigned short port, unsigned char val) {
     asm volatile("outb %0, %1" : : "a"(val), "Nd"(port) );
 }
+
+void wait_for_io(uint32_t timer_count)
+{
+  while(1){
+    asm volatile("nop");
+    timer_count--;
+    if(timer_count <= 0)
+      break;
+    }
+}
+void sleep(uint32_t s) {
+    wait_for_io(s);
+}

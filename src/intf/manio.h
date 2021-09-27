@@ -33,3 +33,5 @@ void handleError(char* err);
 char* backspace();
 void outb(unsigned short port, unsigned char val);
 unsigned char inb(unsigned short int port);
+void wait_for_io(uint32_t timer_count);
+void sleep(uint32_t s);
